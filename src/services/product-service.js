@@ -12,5 +12,8 @@ module.exports = {
           return Promise.reject('Invalid response object')
         }
       })
+      .catch( (err) => {
+        throw new Error(err)
+      })
   }
 }
